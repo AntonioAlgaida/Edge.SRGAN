@@ -86,11 +86,11 @@ To test the trained HR Generator, you must comment the lane of _train()_ in
 And then, uncomment the lane of _test()_ in the same file.<br>
 Finally, run the _main.py_ file
 
-This will create the HR testing tile images in TestSet//600px//output
+This will create the HR testing tile images in TestSet\\600px\\output
 To process the results images, you must run:
 > join_slice_images.py
 
-This will read the results images in TestSet//600px//output, will move each image to a folder, join and then move the result HR images into a single folder called "final"
+This will read the results images in TestSet\\600px\\output, will move each image to a folder, join and then move the result HR images into a single folder called "final"
 
 ## Sources and resources:
 Papers with code in SISR: https://paperswithcode.com/task/image-super-resolution
