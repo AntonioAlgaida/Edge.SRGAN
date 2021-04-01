@@ -2,8 +2,11 @@
 """
 Created on Wed Feb 17 11:52:34 2021
 
-@author: anton
+@author: Antonio Guillen-Perez
+@twitter: agnprz
+@email: antonio_algaida@hotmail.com
 """
+
 import os
 import shutil
 import image_slicer  # !https://github.com/samdobson/image_slicer
