@@ -61,8 +61,8 @@ You can reuse the training edge generator that I left in:
 > - ckpts/EdgeModel_gen.pth
 
 ## HR Generator:
-Once the edge generator has been trained, or using the one I provide pretrained, we now move on to train the model generator.
-the proposed architecture is as follows:
+Once the edge generator has been trained, or using the one I provide pretrained, we now move on to train the model generator.<br>
+The proposed architecture is as follows:
 ![Arch](https://github.com/AntonioAlgaida/Edge.SRGAN/blob/main/arch.png)
 
 ## Sources and resources:
