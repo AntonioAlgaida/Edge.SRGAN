@@ -54,11 +54,16 @@ The sliced images will be saved in:
 > Test set:
 > - LR: TestSet\\600px\\croppedoverl
 
-## Edge generator:
+## Edge Generator:
 To obtain a edge generator I use the code in Edge Informed SISR code (https://github.com/knazeri/edge-informed-sisr)<br>
 This code will train a edge generator training with canny and GANs.<br>
 You can reuse the training edge generator that I left in:
 > - ckpts/EdgeModel_gen.pth
+
+## HR Generator:
+Once the edge generator has been trained, or using the one I provide pretrained, we now move on to train the model generator.
+the proposed architecture is as follows:
+![Arch](https://github.com/AntonioAlgaida/Edge.SRGAN/blob/main/arch.png)
 
 ## Sources and resources:
 Papers with code in SISR: https://paperswithcode.com/task/image-super-resolution
