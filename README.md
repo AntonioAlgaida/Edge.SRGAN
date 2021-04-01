@@ -57,7 +57,8 @@ The sliced images will be saved in:
 ## Edge generator:
 To obtain a edge generator I use the code in Edge Informed SISR code (https://github.com/knazeri/edge-informed-sisr)<br>
 This code will train a edge generator training with canny and GANs.<br>
-You can reuse the training edge generator that I left in (ckpts/EdgeModel_gen.pth)
+You can reuse the training edge generator that I left in:
+> - ckpts/EdgeModel_gen.pth
 
 ## Sources and resources:
 Papers with code in SISR: https://paperswithcode.com/task/image-super-resolution
