@@ -1,5 +1,8 @@
 # Edge.SRGAN
-This repository was created in order to participate in the Hackathon organized by @SpainAI, in the computer vision challenge. The objective of this challenge was the generation of high resolution images, i.e. Single Image Super Resolution (SISR). For this, I decided to implement a solution that unifies the advantages offered by SRGAN (see https://arxiv.org/abs/1609.04802) together with those offered by the edge prediction (Edge Informed SISR) introduced in https://arxiv.org/abs/1909.05305.
+This repository was created in order to participate in the Hackathon organized by @SpainAI, in the computer vision challenge.<br>
+http://www.spain-ai.com/hackathon2020_reto_Computer_Vision.php
+
+The objective of this challenge was the generation of high resolution images, i.e. Single Image Super Resolution (SISR). For this, I decided to implement a solution that unifies the advantages offered by SRGAN (see https://arxiv.org/abs/1609.04802) together with those offered by the edge prediction (Edge Informed SISR) introduced in https://arxiv.org/abs/1909.05305.
 
 ## Analyzing the challenge:
 In this challenge we were asked to train a system that learns to generate high resolution images from low quality images. For this, we provided a training dataset where low quality images existed, as well as the corresponding high resolution images for each of these images.
@@ -54,11 +57,24 @@ The sliced images will be saved in:
 > Test set:
 > - LR: TestSet\\600px\\croppedoverl
 
-## Edge generator:
+## Edge Generator:
 To obtain a edge generator I use the code in Edge Informed SISR code (https://github.com/knazeri/edge-informed-sisr)<br>
 This code will train a edge generator training with canny and GANs.<br>
 You can reuse the training edge generator that I left in:
 > - ckpts/EdgeModel_gen.pth
+
+## HR Generator:
+Once the edge generator has been trained, or using the one I provide pretrained, we now move on to train the model generator.<br>
+The proposed architecture is as follows:
+![Arch](https://github.com/AntonioAlgaida/Edge.SRGAN/blob/main/arch.png)
+
+To train the HR Generator you must run:
+> main.py
+
+Making sure that the lane with train is not commented
+
+The Tensorboard will allow you to keep track of the metrics studied during training.
+To use Tensorboard, read this: https://pytorch.org/tutorials/recipes/recipes/tensorboard_with_pytorch.html
 
 ## Sources and resources:
 Papers with code in SISR: https://paperswithcode.com/task/image-super-resolution
@@ -69,3 +85,6 @@ Other SRGAN: https://github.com/kunalrdeshmukh/SRGAN
 
 Original Edge Informed SISR: https://github.com/knazeri/edge-informed-sisr
 
+Thanks to SpainAI to organize this hackatlon <3. <br>
+https://twitter.com/spain_ai_ <br>
+http://www.spain-ai.com/ <br>
