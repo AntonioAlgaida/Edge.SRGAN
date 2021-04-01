@@ -105,4 +105,5 @@ Thanks to SpainAI to organize this hackatlon <3. <br>
 https://twitter.com/spain_ai_ <br>
 http://www.spain-ai.com/ <br>
 
-If you have any doubts, you can feel free to contact with me.
+If you have any doubts, you can feel free to contact me.
+@agnprz
