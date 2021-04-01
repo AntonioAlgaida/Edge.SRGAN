@@ -39,7 +39,7 @@ In summary, we have:
 > - LR: TestSet\\600px\\image_600px_1490.png
 
 ## Preprocessing the images:
-First, because the images are very large (LR=600x600px; HR=2400x2400px). I cut the images into small patches to speed up the I/O in training because in training I need to read a small patch of the original image (32px). So I'm going to cut each image into small patches. I will cut each image into 6x6 tiles with an 8 pixel pad to avoid boundary aberrations.<br>
+First, because the images are very large (LR=600x600px; HR=2400x2400px). I cut the images into small patches to speed up the I/O in training because in training I need to read a small patch of the original image (32px). So I'm going to cut each image into small patches. I will cut each image into 6x6 tiles with an 8 pixels pad to avoid boundary aberrations.<br>
 To do this, you must run 
 
 > slice_images_w_overlapping.py
