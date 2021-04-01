@@ -65,6 +65,14 @@ Once the edge generator has been trained, or using the one I provide pretrained,
 The proposed architecture is as follows:
 ![Arch](https://github.com/AntonioAlgaida/Edge.SRGAN/blob/main/arch.png)
 
+To train the HR Generator you must run:
+> main.py
+
+Making sure that the lane with train is not commented
+
+The Tensorboard will allow you to keep track of the metrics studied during training.
+To use Tensorboard, read this: https://pytorch.org/tutorials/recipes/recipes/tensorboard_with_pytorch.html
+
 ## Sources and resources:
 Papers with code in SISR: https://paperswithcode.com/task/image-super-resolution
 
