@@ -76,6 +76,18 @@ Making sure that the lane with train is not commented
 The Tensorboard will allow you to keep track of the metrics studied during training.
 To use Tensorboard, read this: https://pytorch.org/tutorials/recipes/recipes/tensorboard_with_pytorch.html
 
+## Results:
+The results obtain an L1 loss of 0.0321 and SSIM of 0.88
+
+## Testing:
+To test the trained HR Generator, you must comment the lane of _train()_ in 
+> main.py
+
+And then, uncomment the lane of _test()_ in the same file.
+Finally, run the _main.py_ file
+
+
+
 ## Sources and resources:
 Papers with code in SISR: https://paperswithcode.com/task/image-super-resolution
 
