@@ -242,8 +242,8 @@ def train():
     writer = SummaryWriter()
 
     BATCH_SIZE = 8
-    dataloaders = data_loader.fetch_dataloader('newtrain', batch_size=BATCH_SIZE, nworks=2, max_patch=30)
-    train_dl = dataloaders['newtrain']
+    dataloaders = data_loader.fetch_dataloader('train', batch_size=BATCH_SIZE, nworks=2, max_patch=30)
+    train_dl = dataloaders['train']
 
     CUDA = torch.cuda.is_available()
     n_gen = 20
@@ -344,8 +344,8 @@ def train():
                         save_image(img_grid, f"imgs/pretraining/{i}.png", nrow=1, normalize=False)
 
     BATCH_SIZE = 8
-    dataloaders = data_loader.fetch_dataloader('newtrain', batch_size=BATCH_SIZE, nworks=2)
-    train_dl = dataloaders['newtrain']
+    dataloaders = data_loader.fetch_dataloader('train', batch_size=BATCH_SIZE, nworks=2)
+    train_dl = dataloaders['train']
 
     load_pretrain = False
     if load_pretrain:
@@ -534,8 +534,8 @@ def test():
     edge_generator.load_state_dict(data['generator'])
     edge_generator.eval()
     
-    dataloaders = data_loader.fetch_dataloader('newtest', nworks=2)
-    test_dl = dataloaders['newtest']
+    dataloaders = data_loader.fetch_dataloader('test', nworks=2)
+    test_dl = dataloaders['test']
 
     with tqdm(total=len(test_dl)) as t:
         for lr_images, lr_edges, fname in test_dl:
@@ -543,7 +543,7 @@ def test():
             # compute model output
             hr_edges_pred = edge_generator(lr_images, lr_edges).detach()
             high_res_fake = generator(Variable(lr_images), Variable(hr_edges_pred*2-1))
-            fname = fname[0].replace('croppedoverl7', 'output')
+            fname = fname[0].replace('croppedoverl', 'output')
 
             pad = 8*2
             save_image((high_res_fake[0][:, pad:-pad, pad:-pad]+1)/2, fname)
