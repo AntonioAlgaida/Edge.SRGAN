@@ -6,9 +6,9 @@ In this challenge we were asked to train a system that learns to generate high r
 In addition, another set of low resolution test data was provided and used to evaluate the proposed solutions.
 What you were asked is that for the low quality test image set, generate the high quality images.
 This challenge was posed by looking for a practical application of Generative Adversarial Neural Networks (GANs) algorithms.
-![SISR](https://static-01.hindawi.com/articles/mpe/volume-2020/5217429/figures/5217429.fig.002.svgz)
+![SISR](https://beyondminds.ai/wp-content/uploads/2020/07/1_bfLS2BU_d7HMkzwF8aUbDg.png)
 
-[SISR with GANs - https://doi.org/10.1155/2020/5217429]
+[SISR with GANs - https://beyondminds.ai/blog/an-introduction-to-super-resolution-using-deep-learning/9]
 
 The metric used to evaluate the solutions was the Structural similarity index (SSIM, see https://medium.com/srm-mic/all-about-structural-similarity-index-ssim-theory-code-in-pytorch-6551b455541e.)
 
