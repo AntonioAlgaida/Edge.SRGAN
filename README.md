@@ -83,10 +83,14 @@ The results obtain an L1 loss of 0.0321 and SSIM of 0.88
 To test the trained HR Generator, you must comment the lane of _train()_ in 
 > main.py
 
-And then, uncomment the lane of _test()_ in the same file.
+And then, uncomment the lane of _test()_ in the same file.<br>
 Finally, run the _main.py_ file
 
+This will create the HR testing tile images in TestSet//600px//output
+To process the results images, you must run:
+> join_slice_images.py
 
+This will read the results images in TestSet//600px//output, will move each image to a folder, join and then move the result HR images into a single folder called "final"
 
 ## Sources and resources:
 Papers with code in SISR: https://paperswithcode.com/task/image-super-resolution
