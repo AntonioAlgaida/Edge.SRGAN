@@ -5,5 +5,7 @@ This repository was created in order to participate in the Hackathon organized b
 
 
 Original SRGAN: https://github.com/twhui/SRGAN-PyTorch
+
 Other SRGAN: https://github.com/kunalrdeshmukh/SRGAN
+
 Original Edge Informed SISR: https://github.com/knazeri/edge-informed-sisr
