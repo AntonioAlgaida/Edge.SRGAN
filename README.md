@@ -2,7 +2,7 @@
 This repository was created in order to participate in the Hackathon organized by @SpainAI, in the computer vision challenge.<br>
 http://www.spain-ai.com/hackathon2020_reto_Computer_Vision.php
 
-The objective of this challenge was the generation of high resolution images, i.e. Single Image Super Resolution (SISR). For this, I decided to implement a solution that unifies the advantages offered by SRGAN (see https://arxiv.org/abs/1609.04802) together with those offered by the edge prediction (Edge Informed SISR) introduced in https://arxiv.org/abs/1909.05305.
+The objective of this challenge was the generation of high resolution images, i.e. Single Image Super Resolution (SISR). For this, I decided to implement a solution that unifies the advantages offered by SRGAN (Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network) (see https://arxiv.org/abs/1609.04802) together with those offered by the edge prediction (Edge-Informed Single Image Super-Resolution) introduced in https://arxiv.org/abs/1909.05305.
 
 ## Analyzing the challenge:
 In this challenge we were asked to train a system that learns to generate high resolution images from low quality images. For this, we provided a training dataset where low quality images existed, as well as the corresponding high resolution images for each of these images.
